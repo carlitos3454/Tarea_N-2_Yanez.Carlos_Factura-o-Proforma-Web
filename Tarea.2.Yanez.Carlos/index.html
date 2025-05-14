@@ -1,0 +1,104 @@
+ <!-- CARLOS RAMIRO YANEZ YAZAN-->
+  <!-- PROGRAMACION INTEGRATIVA DE COMPONENTES WEB-->
+
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MERCAFACILC.Y TU TIENDA DE CONFIANZA</title>
+    <!-- Se añade el enlace al archivo de estilos externo que se define en la actividad -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!--Se busco adaptar el contenedor principal de la factura -->
+    <div class="contenedor-factura">
+
+        <!-- Se coloca el título principal de la factura -->
+        <h1 class="titulo">MERCA FACIL C.Y</h1>
+
+        <!-- Se añadio la sección de información de la empresa y del cliente -->
+        <div class="seccion-informacion">
+
+            <!-- Bloque con los datos de la empresa quien emite la factura -->
+            <div class="bloque empresa">
+                <h2>Datos de la Empresa</h2>
+                
+                <table>
+                    <!-- Se añade todas las descripciones que se solicitan en la seccion de la empresa-->
+
+                    <tr><td><strong>Nombre:</strong></td><td>MercaFácil C.Y.</td></tr>
+                    <tr><td><strong>Dirección:</strong></td><td>Av. Universitaria, Quito</td></tr>
+                    <tr><td><strong>RUC:</strong></td><td>1790012345001</td></tr>
+                    <tr><td><strong>Contacto:</strong></td><td>0960136632 / MercaFacilC@outlook.com</td></tr>
+                </table>
+            </div>
+
+            <!-- Bloque con los datos del cliente en este caso mis datos personales como ejemplo -->
+            <div class="bloque cliente">
+                <h2>Datos del Cliente</h2>
+                <table>
+                    <!-- Se añade todas las descripciones que se solicitan en la seccion cliente-->
+
+                    <tr><td><strong>Nombre:</strong></td><td>Carlos Yánez</td></tr>
+                    <tr><td><strong>Cédula/RUC:</strong></td><td>1753888492</td></tr>
+                    <tr><td><strong>Dirección:</strong></td><td>Av. Universitaria/Pio.Jaramillo.Pasaje N6B</td></tr>
+                    <tr><td><strong>Contacto:</strong></td><td>0960136632 / Ramiro3456_@outlook.com</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Siguiente sección con el listado de productos comprados -->
+        <div class="bloque productos">
+            <h2>Listado de Productos</h2>
+            <table>
+                <thead>
+   <!-- Se añade todas las descripciones que se solicitan en la seccion producto-->
+                    <tr>
+                        <th>Código</th>
+                        <th>Descripción</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PRD003</td>
+                        <td>PlayStation</td>
+                        <td>2</td>
+                        <td>$550.00</td>
+                        <td>$1.100</td>
+                    </tr>
+                    <tr>
+                        <td>PRD004</td>
+                        <td>Mandos Jostick</td>
+                        <td>2</td>
+                        <td>$90.00</td>
+                        <td>$180.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Sección con información adicional sobre la factura -->
+        <div class="bloque info-adicional">
+            <h2>Información Adicional</h2>
+            <table>
+                <tr><td><strong>Forma de Pago:</strong></td><td>Transferencia Bancaria o Tarjeta de Credito</td></tr>
+                <tr><td><strong>Observaciones:</strong></td><td>La entrega sera antes de 48 horas. 
+                                                                No se agregan valores fijos por envio.</td></tr>
+                <tr>
+                    <!-- Mensaje final o pie de factura -->
+                    <td colspan="2" class="pie-mensaje">
+                        Te agradecemos por tu compra para mas información. <br>
+                        Visítanos en: www.Tiendafacil.com
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>
